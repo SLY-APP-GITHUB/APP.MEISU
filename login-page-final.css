@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.background-container {
+  position: relative;
+  width: 100vw; 
+  height: 100vh; 
+  overflow: hidden;
+}
+
+.istyle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  
+}
+
+.company-name {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff; 
+  font-size: x-large;
+  font-weight: bolder;
+  display: flex;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.comp-img {
+  height: 100px;
+  width: 200px;
+}
+
+.login-Form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.71);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 130%; /* Increase width for a larger form */
+  max-width: 400px; /* Set a max-width to prevent excessive width on larger screens */
+  height: 350px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  font-weight:bold ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 span{
+  color: rgba(0, 0, 255, 0.579);
+  font-style: italic;
+}
+h2 span{
+  color: blue;
+  font-style: italic;
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+p {
+  text-align: left;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+#login-bttn {
+  width: 100%;
+  padding: 12px;
+  background-color:blue;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#login-bttn:hover {
+  background-color: rgb(15, 174, 237);
+  color: black;
+}
+
+
+/*button {
+  width: 100%;
+  padding: 12px;
+  background-color:blue;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: skyblue;
+}*/
+
+.admin-btn-container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.admin-btn {
+  margin-top: 100px;
+  padding: 12px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.admin-btn:hover {
+  background-color: skyblue;
+  color: black;
+}
+
+
+.admin-form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  background: white;
+  
+}
+
+
+.admin-form-container {
+  max-width: 400px;
+}
+
+h3{
+  color: black;
+  text-align: center;
+  color: blueviolet;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.admin-login-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: violet;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-login-btn:hover {
+  background-color: blueviolet;
+}

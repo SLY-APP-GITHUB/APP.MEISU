@@ -1,0 +1,307 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    
+}
+
+.background-container {
+    position: relative;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden; 
+
+}
+
+.imgsuper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.side-bar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: calc(100% - 25px);
+    background-color: rgba(255, 255, 255, 0.54); 
+    border: 1px solid black;
+}
+
+.side-bar p{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}
+.side-bar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.side-bar li{
+    font-size: 26px;
+    padding: 10px 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.side-bar li img {
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.image-edit{
+    height: 50px;
+    width: 50px;
+}
+
+.side-bar:hover {
+    background-color: rgba(13, 218, 208, 0.686);
+    transition: background-color 0.6s ease;
+}
+
+.text-li:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.2s ease;
+    padding: 8px;
+}
+
+.main-super{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: calc(100% - 350px);
+    height: calc(100% - 25px);
+    background-color: none; 
+   /* border: 3px solid black;*/
+}
+
+.main-super h1, h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sub-container {
+    width: calc(25% - 10px); 
+    height: calc(70% - 10px); 
+    margin: 5px; 
+    float: left; 
+    background-color: rgba(255, 255, 255, 0.54); 
+    box-sizing: border-box; 
+    border: 2px solid #000; 
+    overflow: hidden;
+    margin-top: 10%;
+    border-radius: 5px;
+}
+
+.sub-container P{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.sub-container:hover {
+    background-color: rgba(0, 0, 171, 0.5) !important; 
+    color: whitesmoke;
+    transition: background-color 0.6s ease;
+}
+
+.sub-momo{
+    width: calc(25% - 10px); 
+    height: calc(70% - 10px); 
+    margin: 5px; 
+    float: left; 
+    background-color: rgba(255, 255, 255, 0.54); 
+    box-sizing: border-box; 
+    border: 2px solid #000; 
+    overflow: hidden;
+    margin-top: 10%;
+    border-radius: 5px;
+}
+
+.sub-momo:hover {
+    background-color: rgba(194, 194, 0, 0.565) !important; 
+    color: whitesmoke;
+    transition: background-color 0.6s ease;
+}
+
+.sub-momo p {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.sub-fidel{
+    width: calc(25% - 10px); 
+    height: calc(70% - 10px); 
+    margin: 5px; 
+    float: left; 
+    background-color: rgba(255, 255, 255, 0.54); 
+    box-sizing: border-box; 
+    border: 2px solid #000; 
+    overflow: hidden;
+    margin-top: 10%;
+    border-radius: 5px;
+}
+
+.sub-fidel:hover {
+    background-color: rgba(255, 166, 0, 0.588) !important; 
+    color: whitesmoke;
+    transition: background-color 0.6s ease;
+}
+
+.sub-fidel p {
+    text-align: center;
+    font-weight: bolder; 
+}
+
+.sub-cal{
+    width: calc(25% - 10px); 
+    height: calc(70% - 10px); 
+    margin: 5px; 
+    float: left; 
+    background-color: rgba(255, 255, 255, 0.54); 
+    box-sizing: border-box; 
+    border: 2px solid #000; 
+    overflow: hidden;
+    margin-top: 10%;
+    border-radius: 5px;
+}
+
+.sub-cal:hover {
+    background-color: rgba(202, 145, 0, 0.586) !important; 
+    color: whitesmoke;
+    transition: background-color 0.6s ease;
+}
+
+.sub-cal p{
+    text-align: center;
+    font-weight: bolder; 
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.popup-form form {
+  width: 80%; 
+  max-width: 400px; 
+  margin: auto;
+}
+
+.popup-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-form h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.popup-form label {
+  display: block;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.popup-form select,
+.popup-form button, 
+.popup-form input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.popup-form button {
+  background-color: blue;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.popup-form button:hover {
+  background-color: rgb(0, 183, 255);
+  color: black;
+}
+input, select {
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+    
+.popup-form {
+    display: none;
+    background-color: skyblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: auto;
+    width: auto;
+    margin: 5px;
+    max-height: 600px;
+    overflow-y: auto; 
+}
+
+.popup-form p{
+    text-align: center;
+}
+
+.popup-form:hover {
+    background: #ffffffe4;
+    transition: background-color 0.7s ease;
+}
+
+.card-disp {
+    width: calc(95% - 1px);
+    height: calc(90% - 320px);
+    margin: 5px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000; 
+}
+
+.card-disp h1,
+.card-disp h2 {
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: medium;
+}
+
+.card-disp:hover{
+    background-color: rgb(213, 213, 213);
+    transition: background-color 0.4s ease;
+    color: black;
+}

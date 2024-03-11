@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user.css">
+    <title>user</title>
+</head>
+<body>
+    <div class="background-container">
+        <img class="imgsuper" src="images/your-image2.jpeg" alt="Background Image">
+        <div class="side-bar">
+            <p>Welcome,user.</p>
+            <ul>
+                <ul>
+                    <li><img src="images/dashboard s.png" alt="" class="image-edit" ><span class="text-li1">Dashboard</span>
+                    </li>
+                    <li><img src="images/dollars.png" alt="" class="image-edit" >&nbsp; <span class="text-li" onclick="showForm('payment-form')">Payment</span>
+                    </li>
+                    <li><img src="images/bank.png" alt="" class="image-edit" >&nbsp; <span class="text-li" onclick="showForm('susu-form')">Susu</span>
+                    </li>
+                    <li><img src="images/circle.png" alt="" class="image-edit" > &nbsp;<span class="text-li" onclick="showForm('settings-form')">Settings</span>
+                    </li>
+                    <li><img src="images/help s.png" alt="" class="image-edit" >&nbsp; <span class="text-li" onclick="showForm('help-form')">Help</span>
+                    </li>
+                    <li><img src="images/turn-off.png" alt="" class="image-edit" >&nbsp; <span class="text-li">Log-Out</span>
+                    </li>
+            </ul>
+        </div>
+        <div class="main-super">
+            <div class="sub-momo">
+                <p> MOMO-SECTION </p>
+                <div class="card-disp">
+                    <h1>Initial Balance</h1>
+                    <h2>GHC 1000</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Today's Costumers</h1>
+                    <h2>26</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Amount Deposited</h1>
+                    <h2>GHC 10000000</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Amount Transfered</h1>
+                    <h2>GHC 1000000</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Total Current Balance</h1>
+                    <h2>GHC 100000000</h2>
+                </div>
+            </div>
+            <div class="sub-fidel">
+                <p> FIDELITY-SECTION </p>
+                <div class="card-disp">
+                    <h1>Initial Balance</h1>
+                    <h2>GHC 1000</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Today's Costumers</h1>
+                    <h2>10</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Amount Deposited</h1>
+                    <h2>GHC 10000000</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Amount Transfered</h1>
+                    <h2>GHC 1000000</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Total Current Balance</h1>
+                    <h2>GHC 100000000</h2>
+                </div>
+            </div>
+            <div class="sub-container">
+                <p> ECOBANK-SECTION </p>
+                <div class="card-disp">
+                    <h1>Initial Balance</h1>
+                    <h2>GHC 1000</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Today's Costumers</h1>
+                    <h2>47</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Amount Deposited</h1>
+                    <h2>GHC 10000000</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Amount Transfered</h1>
+                    <h2>GHC 1000000</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Total Current Balance</h1>
+                    <h2>GHC 100000000</h2>
+                </div>
+            </div>
+            <div class="sub-cal">
+                <p> CALBANK-SECTION </p>
+                <div class="card-disp">
+                    <h1>Initial Balance</h1>
+                    <h2>GHC 1000</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Today's Costumers</h1>
+                    <h2>2</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Amount Deposited</h1>
+                    <h2>GHC 10000000</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Amount Transfered</h1>
+                    <h2>GHC 1000000</h2>
+                </div>
+                <div class="card-disp">
+                    <h1>Total Current Balance</h1>
+                    <h2>GHC 100000000</h2>
+                </div>
+            </div>
+        </div>
+        <div id="overlay">
+            <div id="dashboard-form" class="popup-form">
+                <h2>Dashboard Menu</h2>
+                <form>
+                    <label for="view-Dashboard">Dashboard Type:</label>
+                    <select id="branch" name="branch" required>
+                        <option value="null"disabled selected hidden >......</option>
+                        <option value="Overall-Dashboard">Overall Dashboard</option>
+                        <option value="Aiyinase-Dashboard">Aiyinase</option>
+                        <option value="Prestea-Dashboard">Prestea</option>
+                        <option value="Bogoso-Dashboard">Bogoso</option>
+                    </select>
+                    <button type="button" onclick="DashboardForm()">Load It</button>
+                    <button onclick="hideForm()">Close</button>
+                </form>
+            </div>
+            <div id="payment-form" class="popup-form">
+                <h2>Payment Form</h2>
+                <form>
+                    <label for="payment-type">Payment Type:</label>
+                    <select id="payment-type" name="payment-type" required>
+                        <option value="choose" disabled selected hidden>......</option>
+                        <option value="momo">Mobile Money (MoMo)</option>
+                        <option value="ecobank">Ecobank</option>
+                        <option value="fidelity">Fidelity Bank</option>
+                        <option value="Others">Calbank</option>
+                    </select>
+                    <label for="Contact-or-Acct">Contact or Acct. number:</label>
+                    <input type="text" name="number" placeholder="Contact-or-Acct. number" required>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" placeholder="name" required>
+                    <label for="amount">Amount in number(s):</label>
+                    <input type="number" name="amount" placeholder="amount" required>
+                    <button type="button" onclick="savePaymentForm()">Save</button>
+                    <button onclick="hideForm()">Close</button>
+                </form>
+            </div>
+            <div id="settings-form" class="popup-form">
+                <h2>Settings Menu</h2>
+                <form>
+                    <label for="transaction-type">Transaction Type:</label>
+                    <select id="transaction-type" name="transaction-type" required>
+                        <option value="" disabled selected hidden>......</option>
+                        <option value="all-transac">All Transactions</option>
+                        <option value="momo">Mobile Money (MoMo)</option>
+                        <option value="ecobank">Ecobank</option>
+                        <option value="fidelity">Fidelity Bank</option>
+                        <option value="Others">Calbank</option>
+                    </select>
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" name="start-date" required>
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" name="end-date" required>
+                    <button type="button" onclick="settingsForm()">Export Data</button>
+                    <button type="button" onclick="ShowDataForm()">View data</button>
+                    <button type="button" onclick="UserInputDataForm()">User Inputs</button>
+                    <button onclick="hideForm()">Close</button>
+                </form>
+            </div>
+            <div id="View-data" class="popup-form">
+                <h2>View Menu</h2>
+                <form>
+                    <p>Name. -- Type of tranc. -- Amount. -- Branch. -- Date.</p>
+                    <p>Mr. Kwaw -- Ecobank -- GHC 10000 -- Bogoso -- 11/12/23  12:27pm</p>
+                    <p>Mrs. Fatima -- Calbank -- GHC 10000 -- Prestea -- 11/12/23  1:07pm</p>
+                    <p>Mr. Louis -- MOMO -- GHC 10000 -- Aiyinase -- 11/12/23  1:43pm</p>
+                    <p>Mr. Fred -- Fidelity -- GHC 10000 -- Bogoso -- 11/12/23  2:02pm</p>
+                    <button onclick="hideForm()">Close</button>
+                </form>
+            </div>
+            <div id="susu-form" class="popup-form">
+                <h2>Susu Savings Menu</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" placeholder="name" required>
+                    <label for="amount">Amount in number(s):</label>
+                    <input type="number" name="amount" placeholder="amount" required>
+                    <button type="button" onclick="saveSusuForm()">Save</button>
+                    <button type="button" onclick="SusudnvForm()">Susu Database</button>
+                    <button onclick="hideForm()">Close</button>
+                </form>
+            </div>
+            <div id="View-form" class="popup-form">
+                <h2>View Menu</h2>
+                <form>
+                    <p>Name.  --   Amount. --   Balance.</p>
+                    <p>Kofi  --   GHC 50  --  GHC 170</p>
+                    <p>Yaw  --   GHC 50  --  GHC 950</p>
+                    <button onclick="hideForm()">Close</button>
+                </form>
+            </div>
+            <div id="help-form" class="popup-form">
+                <h2>Help Menu</h2>
+                <form>
+                    <p> FOR ANY HELP , CONTACT THE ADMINISTRATOR</p>
+                    <button onclick="hideForm()">Close</button>
+                </form>
+            </div>
+            <div id="user-input-form" class="popup-form">
+                <h2>Input Menu</h2>
+                <form>
+                    <label for="medium-type">Medium-type:</label>
+                    <select id="payment-type" name="payment-type" required>
+                        <option value="choose" disabled selected hidden>......</option>
+                        <option value="momo">Mobile Money (MoMo)</option>
+                        <option value="ecobank">Ecobank</option>
+                        <option value="fidelity">Fidelity Bank</option>
+                        <option value="Others">Calbank</option>
+                    </select>
+                    <input type="number" name="intial-amount" placeholder="initial-amount" required>
+                    <button type="button" onclick="settingsForm()">Enter</button>
+                    <label for="medium-type">Medium-type:</label>
+                    <select id="payment-type" name="payment-type" required>
+                        <option value="choose" disabled selected hidden>......</option>
+                        <option value="momo">Mobile Money (MoMo)</option>
+                        <option value="ecobank">Ecobank</option>
+                        <option value="fidelity">Fidelity Bank</option>
+                        <option value="Others">Calbank</option>
+                    </select>
+                    <input type="number" name="deposited-amount" placeholder="deposited-amount" required>
+                    <button type="button" onclick="settingsForm()">Enter</button>
+                    <button onclick="hideForm()">Close</button>
+                </form>
+            </div>
+            <div id="susudnv-form" class="popup-form">
+                <h2>Susu Database Menu</h2>
+                <form>
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" name="start-date" required>
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" name="end-date" required>
+                    <button type="button" onclick="settingsForm()">Export Susu Data</button>
+                    <button type="button" onclick="showViewForm()">View Susu Data</button>
+                    <button onclick="hideForm()">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="JAVASCRIPT/user.js"></script>
+</body>
