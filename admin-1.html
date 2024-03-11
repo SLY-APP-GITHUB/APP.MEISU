@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="admin-1.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js" defer></script>
+        <title>ADMIN-ONE</title>
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div>
+                    <img src="images/connection-ezgif.com-resize.gif" class="imge-edit"><li>Dashboard</li>
+                </div>
+                <div>
+                    <img src="images/icons8-overview.gif" class="imge-edit"><li class="overview-dropdown" onclick="showOverviewPopup()">Overview</li>
+                </div>
+                <div>
+                    <img src="images/statistics-ezgif.com-resize.gif" class="imge-edit"><li id="transactionMonitoring" >Transaction Monitoring</li>
+                </div>
+                <div>
+                    <img src="images/user-ezgif.com-resize.gif" class="imge-edit"><li id="user-mgmt" onclick="openPopup()">User Management</li>
+                </div>
+                <div>
+                    <img src="images/report-ezgif.com-resize.gif" class="imge-edit"><li class="r-dropdown">Reports
+                        <ul class="r-dd-cont">
+                          <li class="susu-dropdown" onclick="showsusuviewPopup()">Susu Data</li>
+                          <li class="import-dropdown">Import Data</li>
+                        </ul>
+                    </li>
+                </div>
+                <div>
+                    <img src="images/icons8-settings.gif" class="imge-edit">
+                <li class="s-dropdown">Settings
+                    <ul class="s-dd-cont">
+                        <li>Password Reset</li>
+                        <li>Log-Out</li>
+                    </ul>
+                </li>
+                </div>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="body-title">
+                <p>Dashboard</p>
+            </div>
+            <div class="body-content">
+                <p>Momo Section</p><img src="images/momo-images.jpg" class="imge-logo">
+                <div class="momo-mtn">
+                    <p>Aiyinase</p>
+                    <div class="momo-a">
+                        <h3>Teller 1</h3>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 10000000</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 10000000</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Teller 2</h3>
+                    <div class="card">
+                        <div class="card-inner">
+                            <h1>Initial Balance</h1>
+                            <h2>GHC 10000000</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <h1>Today's Customers</h1>
+                            <h2>1</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <h1>Amount Deposited</h1>
+                            <h2>GHC 10000000</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <h1>Amount Transfered</h1>
+                            <h2>GHC 50</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <h1>Total Current Balance</h1>
+                            <h2>GHC 1950</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="momo-mtn">
+                    <p>Prestea</p>
+                    <div class="momo-a">
+                        <h3>Teller 1</h3>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                        <h3>Teller 2</h3>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="momo-mtn">
+                    <p>Bogoso</p>
+                    <div class="momo-a">
+                        <h3>Teller 1</h3>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                        <h3>Teller 2</h3>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Ecobank Section</p><img src="images/ecob-images.png" class="imge-logo">
+                <div class="ecobank-sec">
+                    <p>Aiyinase</p>
+                    <div class="ecobank-a">
+                        <h3>Teller 1</h3>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                        <h3>Teller 2</h3>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ecobank-sec">
+                    <p>Prestea</p>
+                    <div class="ecobank-p">
+                        <h3>Teller 1</h3>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                        <h3>Teller 2</h3>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ecobank-sec">
+                    <p>Bogoso</p>
+                    <div class="ecobank-b">
+                        <h3>Teller 1</h3>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                        <h3>Teller 2</h3>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="ecobank">
+                            <div class="ecobank-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Fidelity Bank Section</p><img src="images/fidelity-images.jpg" class="imge-logo">
+                <div class="fidelity-sec">
+                    <p>Aiyinase</p>
+                    <div class="fidelity-a">
+                        <h3>Teller 1</h3>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                        <h3>Teller 2</h3>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fidelity-sec">
+                    <p>Prestea</p>
+                    <div class="fidelity-p">
+                        <h3>Teller 1</h3>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                        <h3>Teller 2</h3>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fidelity-sec">
+                    <p>Bogoso</p>
+                    <div class="fidelity-b">
+                        <h3>Teller 1</h3>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                        <h3>Teller 2</h3>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="fidelity">
+                            <div class="fidelity-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Cal-Bank Section</p><img src="images/cal bank-images.jpg" class="imge-logo">
+                <div class="calbank-sec">
+                    <p>Aiyinase</p>
+                    <div class="calbank-a">
+                        <h3>Teller 1</h3>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 10000000</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 10000000</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                        <h3>Teller 2</h3>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calbank-sec">
+                    <p>Prestea</p>
+                    <div class="calbank-p">
+                        <h3>Teller 1</h3>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                        <h3>Teller 2</h3>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calbank-sec">
+                    <p>Bogoso</p>
+                    <div class="calbank-b">
+                        <h3>Teller 1</h3>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                        <h3>Teller 2</h3>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Initial Balance</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Today's Customers</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Amount Deposited</h1>
+                                <h2>GHC 1000</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Amount Transfered</h1>
+                                <h2>GHC 50</h2>
+                            </div>
+                        </div>
+                        <div class="calbank">
+                            <div class="calbank-inner">
+                                <h1>Total Current Balance</h1>
+                                <h2>GHC 1950</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-container" id="popup-container">
+          <div class="popup-content" id="popup-content">
+            <h1>Overview Menu</h1>
+            <button class="ov-btn" onclick="ViewTotaltransac()">View Total Transaction Data</button>
+            <button class="ov-btn" onclick="SuperuserDataBase()">Superuser Data</button>
+            <button class="close-popupo" onclick="closeBtn()">Close</button>
+          </div>
+          <div class="popup-content" id="popup-superuser">
+            <form>
+                  <h1>Superuser Data Menu</h1>
+              <label for="database">Choose Branch:</label>
+              <select id="branch" name="branch" required>
+                  <option value="" disabled selected hidden>......</option>
+                  <option value="Overall-Dashboard">Overall Dashboard</option>
+                  <option value="Aiyinase-Dashboard">Aiyinase</option>
+                  <option value="Prestea-Dashboard">Prestea</option>
+                  <option value="Bogoso-Dashboard">Bogoso</option>
+              </select>
+              <label for="view-Teller">Teller Type:</label>
+              <select id="teller" name="teller" required>
+                  <option value="" disabled selected hidden>......</option>
+                  <option value="All tellers">All tellers</option>
+                  <option value="Teller 1">Teller 1</option>
+                  <option value="Teller 2">Teller 2</option>
+              </select>
+              <label for="transaction-type">Transaction Type:</label>
+              <select id="transaction-type" name="transaction-type" required>
+                  <option value="" disabled selected hidden>......</option>
+                  <option value="all-transac">All Transactions</option>
+                  <option value="momo">Mobile Money (MoMo)</option>
+                  <option value="ecobank">Ecobank</option>
+                  <option value="fidelity">Fidelity Bank</option>
+                  <option value="Others">Calbank</option>
+              </select>
+             <label for="start-date">Start Date:</label>
+             <input type="date" id="start-date" name="start-date" required>
+             <label for="end-date">End Date:</label>
+             <input type="date" id="end-date" name="end-date" required>
+             <button class="ov-btn"  onclick="ViewSuperuserData()">View Selected Data</button>
+             <button class="ov-btn"  onclick="SuperuserDataDl()">Download Selected Data</button>
+             <button class="close-popupo" onclick="closeBtn()">Close</button>
+            </form>
+          </div>
+          <div class="popup-content" id="viewTT">
+            <h1>Total Transaction Menu</h1>
+            <form>
+                <h2>Total Momo</h2>
+             <p>Total Momo Balance: GHC 10,000</p>
+             <p>Total Number of Customers: 20</p>
+             <p>Total Momo Deposits: GHC 20,000</p>
+             <p>Total Amount Sent: GHC 5,000</p>
+             <h2>Total Ecobank</h2>
+             <p>Total Ecobank Balance: GHC 10,000</p>
+             <p>Total Number of Customers: 20</p>
+             <p>Total Ecobank Deposits: GHC 20,000</p>
+             <p>Total Amount Sent: GHC 5,000</p>
+             <h2>Total Fidelity</h2>
+             <p>Total Fidelity Balance: GHC 10,000</p>
+             <p>Total Number of Customers: 20</p>
+             <p>Total Fidelity Deposits: GHC 20,000</p>
+             <p>Total Amount Sent: GHC 5,000</p>
+             <h2>Total Calbank</h2>
+             <p>Total Calbank Balance: GHC 10,000</p>
+             <p>Total Number of Customers: 20</p>
+             <p>Total Calbank Deposits: GHC 20,000</p>
+             <p>Total Amount Sent: GHC 5,000</p>
+             <button class="close-popupo" onclick="closeBtn()">Close</button>
+            </form>
+          </div>
+          <div class="popup-content" id="viewDta">
+            <h1>Selected Data To View</h1>
+            <form>
+                <p> contents here !!</p>
+             <button class="close-popupo" onclick="closeBtn()">Close</button>
+            </form>
+          </div>
+        </div>
+        <div class="bgd-edit">
+            <div class="popup-contain" id="userManagementPopup">
+                <span class="close-popups" onclick="closePopup()">X</span>
+                <h2>User Management</h2>
+                <div class="user-txt">
+                    <ul>
+                        <li onclick="viewUsers()">View Number of Users</li>
+                        <li onclick="addUser()">Add New User</li>
+                        <li onclick="deleteUser()">Delete User</li>
+                        <li onclick="assignRole()">Assign User to a Role (either a teller or a superuser)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-TM" id="popup-TM">
+            <div class="popup-conTM" id="popup-contTM">
+                <h2>Transaction Monitoring</h2>
+                <canvas id="barChart"></canvas>
+                <canvas id="pieChart"></canvas>
+                <button class="close-popups" id="close-popupTM">Close</button>
+            </div>
+        </div>
+        <div id="susu-popup" class="susu-popup">
+            <button class="close-popups" onclick="closeSusuPopup()">X</button>
+            <h2>Susu Data</h2>
+            <form>
+                <ul>
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" name="start-date" required>
+
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" name="end-date" required>
+
+                    <li onclick="viewSusuData()">View Susu Data Overall</li>
+                    <li onclick="viewSusuData()">View Susu Data Aiyinase</li>
+                    <li onclick="viewSusuData()">View Susu Data Bogoso</li>
+                    <li onclick="viewSusuData()">View Susu Data Prestea</li>
+                    
+                    <li>Download Susu Data Overall</li>
+                    <li>Download Susu Data Aiyinase</li>
+                    <li>Download Susu Data Bogoso</li>
+                    <li>Download Susu Data Prestea</li>
+                </ul>
+            </form>
+        </div>
+        <div id="view-susu-popup" class="popupvs">
+           <div class="popup-contentvs">
+              <button class="close-popups" onclick="closeViewSusuPopup()">X</button>
+               <h2>Susu Data</h2>
+               <div id="susu-data-container"></div>
+            </div>
+        </div>
+        <script src="JAVASCRIPT/admin-1.js"></script>
+    </body>
+</html>
