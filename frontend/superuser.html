@@ -178,7 +178,7 @@
                     <input type="text" name="name" placeholder="name" required>
                     <label for="amount">Amount in Number(s):</label>
                     <input type="number" name="amount" placeholder="amount" required>
-                    <button type="button" onclick="savePaymentForm()">Save</button>
+                    <button type="button" onclick="ConfirmPaymentForm()">Confirm</button>
                     <button onclick="hideForm()">Close</button>
                 </form>
             </div>
@@ -298,6 +298,26 @@
                     <button type="button" onclick="ShowDataForm()">View-data</button>
                     <button type="button" onclick="settingsForm()">Download Data</button>
                     <button onclick="hideForm()">Close</button>
+                </form>
+            </div>
+            <div id="confir-menu" class="popup-form">
+                <h2>Confirmation Menu</h2>
+                <form>
+                    <label for="payment-type">Payment Type:</label>
+                    <p>Ecobank</p>
+                    <label for="Branch-type">Branch Type:</label>
+                    <p>Prestea</p>
+                    <label for="view-Teller">Teller Type:</label>
+                    <p>Teller 1</p>
+                    <label for="Contact-or-Acct">Contact or Acct. number:</label>
+                    <p>1441000000001</p>
+                    <label for="name">Name of Beneficial:</label>
+                    <p>Adingra Prince</p>
+                    <label for="amount">Amount in number(s):</label>
+                    <p>GHC 13000</p>
+                    <button type="button" onclick="savePaymentForm()">Save</button>
+                    <button type="button" onclick="GoBackPaymentForm()">Go Back</button>
+                    <button onclick="hideForm()">Close</button> 
                 </form>
             </div>
         </div>

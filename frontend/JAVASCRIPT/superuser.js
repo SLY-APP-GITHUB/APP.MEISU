@@ -22,6 +22,17 @@ function ShowDataBaseForm() {
     document.getElementById("data-form").style.display = "block"; 
 }
 
+function ConfirmPaymentForm() {
+    document.getElementById("payment-form").style.display = "none"; 
+    document.getElementById("confir-menu").style.display = "block"; 
+}
+
+function GoBackPaymentForm() {
+    document.getElementById("confir-menu").style.display = "none"; 
+    document.getElementById("payment-form").style.display = "block"; 
+}
+
+
 function hideForm() {
     document.getElementById('overlay').style.display = 'none';
 

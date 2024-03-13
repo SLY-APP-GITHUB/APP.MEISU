@@ -150,11 +150,11 @@
                     </select>
                     <label for="Contact-or-Acct">Contact or Acct. number:</label>
                     <input type="text" name="number" placeholder="Contact-or-Acct. number" required>
-                    <label for="name">Name:</label>
+                    <label for="name">Name of Beneficial:</label>
                     <input type="text" name="name" placeholder="name" required>
                     <label for="amount">Amount in number(s):</label>
                     <input type="number" name="amount" placeholder="amount" required>
-                    <button type="button" onclick="savePaymentForm()">Save</button>
+                    <button type="button" onclick="ConfirmPaymentForm()">Confirm</button>
                     <button onclick="hideForm()">Close</button>
                 </form>
             </div>
@@ -255,6 +255,22 @@
                     <button type="button" onclick="settingsForm()">Export Susu Data</button>
                     <button type="button" onclick="showViewForm()">View Susu Data</button>
                     <button onclick="hideForm()">Close</button>
+                </form>
+            </div>
+            <div id="confir-menu" class="popup-form">
+                <h2>Confirmation Menu</h2>
+                <form>
+                    <label for="payment-type">Payment Type:</label>
+                    <p>Mobile Money</p>
+                    <label for="Contact-or-Acct">Contact or Acct. number:</label>
+                    <p>0200112233</p>
+                    <label for="name">Name of Beneficial:</label>
+                    <p>Kofi Nti</p>
+                    <label for="amount">Amount in number(s):</label>
+                    <p>GHC 2000</p>
+                    <button type="button" onclick="savePaymentForm()">Save</button>
+                    <button type="button" onclick="GoBackPaymentForm()">Go Back</button>
+                    <button onclick="hideForm()">Close</button> 
                 </form>
             </div>
         </div>

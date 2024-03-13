@@ -305,3 +305,12 @@ input, select {
     transition: background-color 0.4s ease;
     color: black;
 }
+
+#confir-menu p{
+    font-weight: bolder;
+    font-size: large;
+    color: goldenrod;
+    margin: none;
+
+}
+
