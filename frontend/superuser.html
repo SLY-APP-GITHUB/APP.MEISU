@@ -15,7 +15,7 @@
                 <ul>
                     <li><img src="images/speedometer-ezgif.com-resize.gif" alt="" class="image-edit" ><span class="text-li" onclick="showForm('dashboard-form')">Dashboard</span>
                     </li>
-                    <li><img src="images/walletnew-ezgif.com-resize.gif" alt="" class="image-edit" >&nbsp; <span class="text-li" onclick="showForm('payment-form')">Payment</span>
+                    <li><img src="images/walletnew-ezgif.com-resize.gif" alt="" class="image-edit" >&nbsp; <span class="text-li" onclick="showForm('choose-menu')">Payment</span>
                     </li>
                     <li><img src="images/safebox-ezgif.com-resize 233.gif" alt="" class="image-edit" >&nbsp; <span class="text-li" onclick="showForm('susu-form')">Susu</span>
                     </li>
@@ -148,13 +148,12 @@
                     <button onclick="hideForm()">Close</button>
                 </form>
             </div>
-            <div id="payment-form" class="popup-form">
-                <h2>Payment Form</h2>
+            <div id="Bpayment-form" class="popup-form">
+                <h2>Bank Payment Form</h2>
                 <form>
-                    <label for="payment-type">Payment Type:</label>
-                    <select id="payment-type" name="payment-type" required>
+                    <label for="Bank-type">Bank Type:</label>
+                    <select id="Bank-type" name="bank-type" required>
                         <option value="" disabled selected hidden>......</option>
-                        <option value="momo">Mobile Money (MoMo)</option>
                         <option value="ecobank">Ecobank</option>
                         <option value="fidelity">Fidelity Bank</option>
                         <option value="Others">Calbank</option>
@@ -172,13 +171,13 @@
                         <option value="Teller 1">Teller 1</option>
                         <option value="Teller 2">Teller 2</option>
                     </select>
-                    <label for="momo-or-Acct">Contact or Acct. number:</label>
-                    <input type="text" name="number" placeholder="Contact-or-Acct. number" required>
+                    <label for="account-numb">Bank Account number:</label>
+                    <input type="text" name="number" placeholder="Enter Bank Account number Here" required>
                     <label for="name">Beneficial's Name:</label>
-                    <input type="text" name="name" placeholder="name" required>
+                    <input type="text" name="name" placeholder="Name" required>
                     <label for="amount">Amount in Number(s):</label>
-                    <input type="number" name="amount" placeholder="amount" required>
-                    <button type="button" onclick="ConfirmPaymentForm()">Confirm</button>
+                    <input type="number" name="amount" placeholder="Enter The Amount of Money Here" required>
+                    <button type="button" onclick="BConfirmPaymentForm()">Confirm</button>
                     <button onclick="hideForm()">Close</button>
                 </form>
             </div>
@@ -241,7 +240,7 @@
             <div id="user-input-form" class="popup-form">
                 <h2>User Input Menu</h2>
                 <form>
-                    <label for="payment-type">Type:</label>
+                    <label for="payment-type">Initial Balance Medium-type:</label>
                     <select id="payment-type" name="payment-type" required>
                         <option value="" disabled selected hidden>......</option>
                         <option value="momo">Mobile Money (MoMo)</option>
@@ -249,9 +248,9 @@
                         <option value="fidelity">Fidelity Bank</option>
                         <option value="Others">Calbank</option>
                     </select>
-                    <input type="number" name="intial-amount" placeholder="initial-amount" required>
+                    <input type="number" name="intial-amount" placeholder="Enter initial balance here" required>
                     <button type="button" onclick="settingsForm()">Enter</button>
-                    <label for="payment-type">Type:</label>
+                    <label for="payment-type">Deposited Amount Medium-type:</label>
                     <select id="payment-type" name="payment-type" required>
                         <option value="" disabled selected hidden>......</option>
                         <option value="momo">Mobile Money (MoMo)</option>
@@ -259,7 +258,7 @@
                         <option value="fidelity">Fidelity Bank</option>
                         <option value="Others">Calbank</option>
                     </select>
-                    <input type="number" name="deposited-amount" placeholder="deposited-amount" required>
+                    <input type="number" name="deposited-amount" placeholder="Enter deposited amount here" required>
                     <button type="button" onclick="settingsForm()">Enter</button>
                     <button onclick="hideForm()">Close</button>
                 </form>
@@ -300,10 +299,10 @@
                     <button onclick="hideForm()">Close</button>
                 </form>
             </div>
-            <div id="confir-menu" class="popup-form">
+            <div id="Bconfir-menu" class="popup-form">
                 <h2>Confirmation Menu</h2>
                 <form>
-                    <label for="payment-type">Payment Type:</label>
+                    <label for="bank-type">Bank Type:</label>
                     <p>Ecobank</p>
                     <label for="Branch-type">Branch Type:</label>
                     <p>Prestea</p>
@@ -316,8 +315,66 @@
                     <label for="amount">Amount in number(s):</label>
                     <p>GHC 13000</p>
                     <button type="button" onclick="savePaymentForm()">Save</button>
-                    <button type="button" onclick="GoBackPaymentForm()">Go Back</button>
+                    <button type="button" onclick="BGoBackPaymentForm()">Go Back</button>
                     <button onclick="hideForm()">Close</button> 
+                </form>
+            </div>
+            <div id="choose-menu" class="popup-form">
+                <h2>Choose Payment Type</h2>
+                <form>
+                    <button type="button" onclick="BanksPaymentForm()">Bank Transactions</button>
+                    <button type="button" onclick="MomoPaymentForm()">Mobile Money (MoMo)</button>
+                    <button onclick="hideForm()">Close</button> 
+                </form>
+            </div>
+            <div id="Mconfir-menu" class="popup-form">
+                <h2>Confirmation Menu</h2>
+                <form>
+                    <label for="mobile-money">MoMo:</label>
+                    <p>Mobile Money (MoMo)</p>
+                    <label for="Branch-type">Branch Type:</label>
+                    <p>Aiyinase</p>
+                    <label for="view-Teller">Teller Type:</label>
+                    <p>Teller 2</p>
+                    <label for="Contact-or-Acct">Mobile Money number:</label>
+                    <p>0555691413</p>
+                    <label for="name">Name of Beneficial:</label>
+                    <p>Kingsley Pele</p>
+                    <label for="amount">Amount in number(s):</label>
+                    <p>GHC 2000</p>
+                    <button type="button" onclick="savePaymentForm()">Save</button>
+                    <button type="button" onclick="MGoBackPaymentForm()">Go Back</button>
+                    <button onclick="hideForm()">Close</button> 
+                </form>
+            </div>
+            <div id="Mpayment-form" class="popup-form">
+                <h2>Mobile Money Payment Form</h2>
+                <form>
+                    <label for="mobile-money">Type:</label>
+                    <select id="mobile-money" name="mobile-money" required>
+                        <option value="momo">Mobile Money (MoMo)</option>
+                    </select>
+                    <label for="Branch-type">Branch Type:</label>
+                    <select id="branch" name="branch" required>
+                        <option value="" disabled selected hidden>......</option>
+                        <option value="Aiyinase">Aiyinase</option>
+                        <option value="Prestea">Prestea</option>
+                        <option value="Bogoso">Bogoso</option>
+                    </select>
+                    <label for="view-Teller">Teller Type:</label>
+                    <select id="teller" name="teller" required>
+                        <option value="" disabled selected hidden>......</option>
+                        <option value="Teller 1">Teller 1</option>
+                        <option value="Teller 2">Teller 2</option>
+                    </select>
+                    <label for="momo-numb">Mobile Money number:</label>
+                    <input type="text" name="number" placeholder="Enter MoMo number Here" required>
+                    <label for="name">Beneficial's Name:</label>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <label for="amount">Amount in Number(s):</label>
+                    <input type="number" name="amount" placeholder="Enter The Amount of Money Here" required>
+                    <button type="button" onclick="MConfirmPaymentForm()">Confirm</button>
+                    <button onclick="hideForm()">Close</button>
                 </form>
             </div>
         </div>

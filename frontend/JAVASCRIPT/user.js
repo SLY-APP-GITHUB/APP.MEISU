@@ -23,14 +23,39 @@ function SusudnvForm() {
     document.getElementById("susudnv-form").style.display = "block"; 
 }
 
-function ConfirmPaymentForm() {
-    document.getElementById("payment-form").style.display = "none"; 
-    document.getElementById("confir-menu").style.display = "block"; 
+function MPaymentForm() {
+    document.getElementById("choose").style.display = "none"; 
+    document.getElementById("Mpayment-form").style.display = "block"; 
+}
+
+function BPaymentForm() {
+    document.getElementById("choose").style.display = "none"; 
+    document.getElementById("Bpayment-form").style.display = "block"; 
+}
+
+function MConfirmPaymentForm() {
+    document.getElementById("Mpayment-form").style.display = "none"; 
+    document.getElementById("Mconfir-menu").style.display = "block"; 
+}
+
+function BConfirmPaymentForm() {
+    document.getElementById("Bpayment-form").style.display = "none"; 
+    document.getElementById("Bconfir-menu").style.display = "block"; 
 }
 
 function GoBackPaymentForm() {
     document.getElementById("confir-menu").style.display = "none"; 
     document.getElementById("payment-form").style.display = "block"; 
+}
+
+function BGoBackPaymentForm() {
+    document.getElementById("Bconfir-menu").style.display = "none"; 
+    document.getElementById("Bpayment-form").style.display = "block"; 
+}
+
+function MGoBackPaymentForm() {
+    document.getElementById("Mconfir-menu").style.display = "none"; 
+    document.getElementById("Mpayment-form").style.display = "block"; 
 }
 
 function hideForm() {

@@ -242,6 +242,7 @@ body {
   font-size: medium;
   margin-bottom: 10px;
   margin-top: 10px;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .popup-form button:hover {
@@ -250,7 +251,7 @@ body {
 }
 input, select {
     padding: 8px;
-    border: 2px solid black;
+    border: 2px solid rgb(71, 71, 71);
     border-radius: 5px;
     box-sizing: border-box;
     margin-bottom: 10px;
@@ -306,10 +307,18 @@ input, select {
     color: black;
 }
 
-#confir-menu p{
+#Mconfir-menu p{
     font-weight: bolder;
     font-size: large;
     color: goldenrod;
+    margin: none;
+
+}
+
+#Bconfir-menu p{
+    font-weight: bolder;
+    font-size: large;
+    color: rgb(0, 105, 0);
     margin: none;
 
 }
