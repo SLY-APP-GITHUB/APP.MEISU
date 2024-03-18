@@ -72,16 +72,15 @@ function viewUsers() {
 
 // Function to add a new user
 function addUser() {
-    const userName = prompt("Enter the new user's name:");
-    const password = prompt("Enter the new user's password:");
-    if (userName) {
-        // Assuming adding a new user to the dummy data
-        users.push({ id: users.length + 1, username: userName, password: password, role: "teller" });
-        alert(`${userName} added as a new user.`);
-    }
-    else {
-        alert("Username and password are required.");
-    }
+    document.getElementById('adduser-backgrd').style.display = 'flex';
+    document.getElementById('add-users').style.display = 'block';
+    document.getElementById('userManagementPopup').style.display = 'none';
+    
+}
+
+function closeadduserBtn() {
+    const popup = document.getElementById("adduser-backgrd");
+    popup.style.display = "none";
 }
 
 // Function to delete a user

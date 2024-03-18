@@ -986,6 +986,40 @@
                <div id="susu-data-container"></div>
             </div>
         </div>
+        <div id="adduser-backgrd">
+            <div class="popup-content" id="add-users">
+                <h1>User Registration Form</h1>
+                <form>
+                    <p>Username</p>
+                    <input type="text" name="Username" id="username" placeholder="Username" required>
+                    <label for="user-type">User Type:</label>
+                    <select id="user-type" name="user-type" required>
+                        <option value="" disabled selected hidden>......</option>
+                        <option value="Administrator">Administrator</option>
+                        <option value="Superuser">Superuser</option>
+                        <option value="Teller">Teller</option>
+                    </select>
+                    <label for="Branch-type">Branch Type:</label>
+                        <select id="branch" name="branch" required>
+                            <option value="" disabled selected hidden>......</option>
+                            <option value="Aiyinase">Aiyinase</option>
+                            <option value="Prestea">Prestea</option>
+                            <option value="Bogoso">Bogoso</option>
+                        </select>
+                    <label for="Teller-type">Teller Type:</label>
+                    <select id="Teller-type" name="Teller-type" required>
+                        <option value="" disabled selected hidden>......</option>
+                        <option value="No type">No Type</option>
+                        <option value="Teller 1">Teller 1</option>
+                        <option value="Teller 2">Teller 2</option>
+                    </select>
+                    <p>Password</p>
+                    <input type="password" name="Password" id="password" placeholder="Password" required>
+                 <button type="submit" class="close-popupo">Add User</button>  
+                 <button class="close-popupo" onclick="closeadduserBtn()">Close</button>
+                </form>
+              </div>
+        </div>
         <script src="JAVASCRIPT/admin-1.js"></script>
     </body>
 </html>
