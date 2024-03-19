@@ -249,7 +249,9 @@
                         <option value="Others">Calbank</option>
                     </select>
                     <input type="number" name="intial-amount" placeholder="Enter initial balance here" required>
-                    <button type="button" onclick="settingsForm()">Enter</button>
+                    <button type="submit" onclick="settingsForm()">Enter</button>
+                </form>
+                <form>
                     <label for="payment-type">Deposited Amount Medium-type:</label>
                     <select id="payment-type" name="payment-type" required>
                         <option value="" disabled selected hidden>......</option>
@@ -259,7 +261,7 @@
                         <option value="Others">Calbank</option>
                     </select>
                     <input type="number" name="deposited-amount" placeholder="Enter deposited amount here" required>
-                    <button type="button" onclick="settingsForm()">Enter</button>
+                    <button type="submit" onclick="settingsForm()">Enter</button>
                     <button onclick="hideForm()">Close</button>
                 </form>
             </div>
